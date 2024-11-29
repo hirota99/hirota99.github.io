@@ -1,0 +1,278 @@
+/* ネオン見出し文字 */
+
+.logo {
+    font-family: "Yuji Hentaigana Akebono", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    width: 65%;
+    height: auto;
+    margin: 30px auto;
+    user-select: none;
+}
+
+.logo h2 {
+    font-size:max(5vw,30px);
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+
+.logo h2 span {
+    animation: blink linear infinite 2s;
+}
+
+.logo h2 span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    79% {
+        color: #333;
+    }
+
+    80% {
+
+        text-shadow: none;
+    }
+
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    92% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+/* ネオン見出し文字ここまで */
+
+
+/* ネオンボタン */
+
+.neon-btn {
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "XROT" 0,
+        "YROT" 0;
+}
+
+.neon-btn {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.blink {
+    font-size:max(3vw,15px);
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    2% {
+        opacity: 0;
+    }
+
+    4% {
+        opacity: 1;
+    }
+
+    6% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    16% {
+        opacity: 0;
+    }
+
+    17% {
+        opacity: 1;
+    }
+
+    18% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    31% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    52% {
+        opacity: 0;
+    }
+
+    54% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    71% {
+        opacity: 1;
+    }
+
+    72% {
+        opacity: 0;
+    }
+
+    73% {
+        opacity: 1;
+    }
+
+    74% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    2% {
+        opacity: 0;
+    }
+
+    4% {
+        opacity: 1;
+    }
+
+    6% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    16% {
+        opacity: 0;
+    }
+
+    17% {
+        opacity: 1;
+    }
+
+    18% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    31% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    52% {
+        opacity: 0;
+    }
+
+    54% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    71% {
+        opacity: 1;
+    }
+
+    72% {
+        opacity: 0;
+    }
+
+    73% {
+        opacity: 1;
+    }
+
+    74% {
+        opacity: 0;
+    }
+}
+
+button:hover .blink {
+    animation: blink 2.5s step-start 0s infinite;
+    -webkit-animation: blink 2.5s step-start 0s infinite;
+    border-color: #00edff;
+    -webkit-box-shadow: 0 0 10px 0 #00edff;
+    box-shadow: 0 0 10px 0 #00edff;
+}
+
+button:hover .blink a {
+    filter: drop-shadow(0 0 10px #00edff);
+    filter: drop-shadow(0 0 13px #00edff) drop-shadow(0 0 15px #00edff);
+}
+
+/* ネオンボタンここまで */
+
+/* スマホ用 */
+
+@media screen and (max-width: 400px){
+
+    .neon-btn{
+        width: 70%;
+    }
+
+}

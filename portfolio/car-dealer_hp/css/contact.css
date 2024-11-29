@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+main{
+    width: 100%;
+    padding: 0 5%;
+}
+
+.top-visual{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../images/business-man-2452808_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.h1{
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    background-color: gray;
+    box-shadow: 5px 5px 0 0px rgb(185, 185, 185);
+    margin: 0 10%;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.form{
+    width: 100%;
+    margin: 30px auto;
+}
+
+table{
+    width: 100%;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+
+th{
+    width: 30%;
+    background-color: #4682b4;
+    padding: 50px;
+    color: white;
+    border: solid 1px white;
+    vertical-align: middle;
+}
+
+td{
+    width: 70%;
+    background-color: #b0c4de;
+    border-bottom: solid 1px white;
+    padding: 2%;
+}
+
+input,textarea{
+    height: 3rem;
+    width: 80%;
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 10px;
+    margin: 30px 20px;
+    padding: 2%;
+    text-align: left;
+}
+
+label{
+    display: inline-block;
+    width: 30%;
+}
+
+.radio-btn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio-btn label{
+    min-width: 150px;
+}
+
+label input{
+    width: 20%;
+}
+
+textarea{
+    height: 10rem;
+}
+
+.send{
+    margin: 0 auto;
+    width: 30%;
+    padding: 20px 0;
+}
+
+.submit-btn{
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 840px) {
+
+    .form{
+        width: 100%;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    form{
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    table{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    tr{
+        display: block;
+        width: 100%;
+    }
+
+    th{
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+
+    td{
+        display: block;
+        width: 100%;
+    }
+
+    input{
+        margin: 10px;
+    }
+
+    .radio-btn input{
+        margin: 10px;
+    }
+
+    .radio-btn label{
+        text-align: left;
+    }
+
+
+}

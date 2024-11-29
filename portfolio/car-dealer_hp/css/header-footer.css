@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    width: 100%;
+}
+
+.c-header {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.c-header__logo {
+    width: 20%;
+}
+
+.c-header__logo img {
+    width: 30%;
+    min-width: 80px;
+}
+
+.c-header__list {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.c-header__list-item {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.4vw;
+}
+
+.c-header__list-link {
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+/* 線から塗りに変わるボタン */
+
+.c-header__list-link {
+    display: inline-block;
+    position: relative;
+    transition: all .2s;
+    transition-delay: .3s;
+    padding: 10px 10px;
+}
+
+.c-header__list-link:hover {
+    background: white;
+    color: black;
+}
+
+.c-header__list-link span {
+    display: block;
+}
+
+.c-header__list-link::before,
+.c-header__list-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: all 0.2s linear;
+}
+
+.c-header__list-link span::before,
+.c-header__list-link span::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 0;
+    background: white;
+    transition: all 0.2s linear;
+}
+
+.c-header__list-link:hover::before,
+.c-header__list-link:hover::after {
+    width: 100%;
+}
+
+.c-header__list-link:hover span::before,
+.c-header__list-link:hover span::after {
+    height: 100%;
+}
+
+.c-header__list-link::before {
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+}
+
+.c-header__list-link::after {
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.2s;
+}
+
+.c-header__list-link span::before {
+    left: 0;
+    top: 0;
+}
+
+.c-header__list-link span::after {
+    right: 0;
+    bottom: 0;
+}
+
+
+/* -----ここまで------ */
+
+
+.c-hamburger-menu {
+    position: fixed;
+}
+
+@media screen and (max-width: 840px) {
+    .c-hamburger-menu__list {
+        background-color: rgba(0, 0, 0, 0.5);
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        padding: 1rem;
+        position: absolute;
+        transform: translateX(-100%);
+        transition: 0.3s;
+        top: 100%;
+        width: 100%;
+    }
+
+    #hamburger:checked~.c-hamburger-menu__list {
+        transform: translateX(0%);
+        transition: 0.3s;
+    }
+
+    .c-header__list-item{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+}
+
+.c-hamburger-menu__input {
+    display: none;
+}
+
+.c-hamburger-menu__bg {
+    cursor: pointer;
+    display: none;
+    height: 100vh;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#hamburger:checked~.c-hamburger-menu__bg {
+    display: block;
+}
+
+.c-hamburger-menu__button {
+    display: none;
+}
+
+@media screen and (max-width: 840px) {
+    .c-hamburger-menu__button {
+        align-items: center;
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        height: 32px;
+        justify-content: center;
+        width: 32px;
+    }
+}
+
+.c-hamburger-menu__button-mark {
+    background-color: white;
+    display: block;
+    height: 1px;
+    transition: 0.3s;
+    width: 20px;
+}
+
+@media screen and (max-width: 840px) {
+    #hamburger:checked~.c-hamburger-menu__button .c-hamburger-menu__button-mark:nth-of-type(1) {
+        transform: translate(2px, 1px) rotate(45deg);
+        transform-origin: 0%;
+    }
+
+    #hamburger:checked~.c-hamburger-menu__button .c-hamburger-menu__button-mark:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #hamburger:checked~.c-hamburger-menu__button .c-hamburger-menu__button-mark:nth-of-type(3) {
+        transform: translate(2px, 3px) rotate(-45deg);
+        transform-origin: 0%;
+    }
+}
+/* -----ここまで------ */
+
+footer {
+    width: 100%;
+    background-color: black;
+    margin-top: 60px;
+}
+
+.sns{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sns ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.sns ul li{
+    width: 5%;
+    margin: 50px 20px;
+}
+
+.sns ul li a img{
+    width: 100%;
+    height: auto;
+    border-radius: 30%;
+    min-width: 30px;
+}
+
+footer .link {
+    color: white;
+}
+
+footer .link ul {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer .link ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.top-button {
+    width: 15vw;
+    height: 15vw;
+    font-size: min(7vw,50px);
+    max-width: 90px;
+    max-height: 90px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: solid 3px white;
+    box-shadow: 0 4px 6px;
+}
+
+.top-button:hover {
+    opacity: 0.7;
+}
+
+/* レスポンシブ微調整 */
+
+@media screen and (max-width: 470px){
+
+    .top-button{
+        bottom: 30px;
+        right: 30px;
+    }
+
+}

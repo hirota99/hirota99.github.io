@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* フォント指定 */
+footer {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* フォント指定ここまで */
+
+
+footer{
+    width: 100vw;
+    height: 200px;
+    background-color: #a52a2a;
+    background-size: cover;
+    background-position: center;
+    display: table-cell;
+}
+
+.sns{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0 50px;
+
+}
+
+.sns img{
+    width: 30px;
+}
+
+footer p{
+    padding: 30px;
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 1px;
+}

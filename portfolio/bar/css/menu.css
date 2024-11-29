@@ -1,0 +1,62 @@
+#menu{
+    width: 100%;
+    background-image: url(../images/AdobeStock_313636013.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-y;
+    padding: 5px 0;
+    color: black;
+}
+
+.menu-item-wapper {
+    width: 100%;
+    margin: 0 auto;
+    padding:5%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    width: 50%;
+    font-family: "Zen Kurenaido", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: bisque;
+    padding:5%;
+}
+
+h3{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.05em;
+}
+
+.item-title{
+    font-size: 4vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title-other{
+    margin-top: 50px;
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    font-size: 2vw;
+}
+
+dt {
+    width: 70%;
+    margin-top: 20px;
+    border-bottom: solid 1px gray;
+}
+
+dd {
+    width: 30%;
+    margin-top: 20px;
+    text-align: right;
+}

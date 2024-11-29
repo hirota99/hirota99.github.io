@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    width: 100%;
+    background: #112;
+    background-size: cover;
+    margin: 0
+}
+
+ul {
+    color: white;
+}
+
+#main-visual {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../images/main-visual.jpeg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#main-visual h1 img {
+    width: 70%;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+
+section {
+    padding: 10px 0;
+}
+
+#topics {
+    width: 100%;
+}
+
+.news {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 30px;
+    color: #f08500;
+}
+
+.news li {
+    width: 20%;
+}
+
+.news-image {
+    width: 100%;
+    height: 60%;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 40% 0 0;
+}
+
+.day {
+    display: inline-block;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.copy {
+    margin-top: 5px;
+
+}
+
+#menu {
+    background-image: url(../images/AdobeStock_313636013.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+.menu-wapper {
+    width: 100%;
+}
+
+h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.05em;
+}
+
+.beer,
+.wine,
+.food {
+    width: 100%;
+    display: flex;
+    margin: 50px 0;
+    position: relative;
+}
+
+.beer-copy,
+.food-copy {
+    color: white;
+    width: 50vw;
+    height: 50vw;
+    background-color: #800000;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 10%;
+    padding-right: 10%;
+    z-index: 1;
+    position: relative;
+}
+
+.wine-copy {
+    color: white;
+    width: 50vw;
+    height: 50vw;
+    background-color: #800000;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    z-index: 1;
+    position: relative;
+}
+
+h3 {
+    font-size: 8vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.beer-copy p,
+.wine-copy p,
+.food-copy p {
+    font-size: 2vw;
+}
+
+.beer-image,
+.food-image {
+    width: 60vw;
+    height: 20vw;
+    text-align: right;
+    vertical-align: middle;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+
+.wine {
+    flex-direction: row-reverse;
+}
+
+.wine-image {
+    width: 60vw;
+    height: 20vw;
+    text-align: left;
+    vertical-align: middle;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+.beer-image img,
+.wine-image img,
+.food-image img {
+    width: 100%;
+}
+
+
+#location {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.google-map {
+    position: relative;
+    width: 90%;
+    height: 0;
+    padding-top: 50%;
+    margin: 0 auto;
+}
+
+.google-map iframe {
+    filter: grayscale(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.address {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.address p {
+    margin: 10px 0;
+}
+
+
+#gallery {
+    width: 100%;
+}
+
+.photo {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    box-shadow: 0 0 30px 3px white;
+}
+
+.photo .small {
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.photo .big {
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+/* スマホ用 */
+
+@media screen and (max-width: 400px) {
+
+    .news {
+        display: block;
+        width: 90%;
+        height: 400px;
+        overflow: scroll;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .news li {
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .beer,
+    .wine,
+    .food {
+        margin: 20px 0;
+    }
+
+    .beer-copy p,
+    .wine-copy p,
+    .food-copy p {
+        font-size: 10px;
+    }
+
+    .photo .small,
+    .photo .big {
+        height: 150px;
+    }
+
+    .photo {
+        box-shadow: 0 0 7px 3px white;
+    }
+
+}
