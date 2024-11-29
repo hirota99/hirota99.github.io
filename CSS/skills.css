@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+
+body {
+    width: 100%;
+    background-color: #f4d498;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top-visual {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../images/skills/AdobeStock_402352374.jpeg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+
+/* 使用ツール */
+.tools{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.tool-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    justify-content: space-around;
+}
+
+.tool-content dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tool-content dl a{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tool-content img{
+    width: 60px;
+}
+
+.tool-content-exp{
+    margin-left: 20px;
+}
+
+.tool-content-name{
+    font-weight: bold;
+    border-bottom: solid 2px black;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* 使用ツールここまで */
+
+.skills {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.skills li {
+    width: 40%;
+    box-sizing: border-box;
+
+}
+
+/* ホバーで拡大 */
+.zoom-box {
+    display: inline-block;
+    overflow: hidden;
+    filter: drop-shadow(2px 2px 3px black);
+}
+.zoom-box img{
+    display: block;
+    transition-duration: .5s;
+}
+.skills li img:hover {
+    transform: scale(1.2);
+}
+/* ホバーで拡大ここまで */
+
+.skills li img {
+    width: 100%;
+}
+
+.skills li dl {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pages{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icon{
+    background-color: #cd853f;
+    color: white;
+    font-size: small;
+    font-weight: lighter;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.introduction {
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.skills dd {
+    margin-top: 5px;
+}
+
+#links{
+    width: 100%;
+    margin: 100px auto;
+}
+
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.banner-contents{
+    width: 300px;
+    height: auto;
+}
+
+.banner-contents img{
+    width: 100%;
+}
+
+.banner-contents{
+    position:relative;
+    top:0;
+    transition: all .3s;
+}
+
+.banner-contents:hover {
+    top:-5px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+}

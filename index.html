@@ -1,12 +1,138 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="jp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/top.css">
+    <link rel="stylesheet" href="./CSS/top-skills.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <!-- フォント指定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- フォント指定ここまで -->
+    <link rel="icon" href="./icon.ico">
     <title>Naoki Hirota</title>
 </head>
+
 <body>
-    <h1>Naoki hirota</h1>
-    <p>ポートフォリオサイト</p>
+    <header class="c-header c-hamburger-menu">
+        <a href="./index.html" class="c-header__logo"><img src="./images/rogo.png" alt="ロゴ"></a>
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input" />
+        <label for="hamburger" class="c-hamburger-menu__bg"></label>
+        <ul class="c-header__list c-hamburger-menu__list">
+            <li class="c-header__list-item">
+                <a href="./second-layer/skills.html" class="c-header__list-link"><span>Skill</span></a>
+            </li>
+            <li class="c-header__list-item">
+                <a href="./second-layer/about.html" class="c-header__list-link"><span>About</span></a>
+            </li>
+            <li class="c-header__list-item">
+                <a href="./second-layer/contact.html" class="c-header__list-link"><span>Contact</span></a>
+            </li>
+        </ul>
+        <label for="hamburger" class="c-hamburger-menu__button">
+            <span class="c-hamburger-menu__button-mark"></span>
+            <span class="c-hamburger-menu__button-mark"></span>
+            <span class="c-hamburger-menu__button-mark"></span>
+        </label>
+    </header>
+
+    <main>
+        <div class="main-visual">
+            <h1 class="name"><img src="./images/name_main.png" alt="Naoki Hirota"></h1>
+        </div>
+
+        <section id="Skill">
+            <div class="h2">
+                <h2>Skills</h2>
+            </div>
+
+        <!-- Webデザインと動画等でジャンプボタン作る？ -->
+
+        <section id="web-design">
+            <ul class="skills">
+                <!-- 実績追加時はここからコピー -->
+                <li>
+                    <a href="http://kensyu.whitesnow.jp/hirota_naoki/portfolio/hirota-bar/index.html">
+                        <div class="zoom-box">
+                            <img src="./images/skills/skills_2.jpg" alt="BarのHP">
+                        </div>
+                        <dl>
+                            <dt>架空BAR ホームページ
+                                <div class="pages">
+                                    <span class="icon">MENU</span>
+                                </div>
+                            </dt>
+                            <div class="introduction">
+                                <dd>対象：テキストテキスト</dd>
+                                <dd>イメージ：おしゃれさとこだわり</dd>
+                            </div>
+                        </dl>
+                    </a>
+                </li>
+                <!-- 実績追加時はここまでコピー -->
+                <li>
+                    <a href="http://kensyu.whitesnow.jp/hirota_naoki/portfolio/index.html">
+                        <div class="zoom-box">
+                            <img src="./images/skills/skills_1.jpg" alt="架空自動車会社HP">
+                        </div>
+                        <dl>
+                            <dt>架空自動車会社 ホームページ
+                                <div class="pages">
+                                    <span class="icon">カーラインナップ</span>
+                                    <span class="icon">お問い合わせ</span>
+                                    <span class="icon">会社概要</span>
+                                </div>
+                            </dt>
+                            <div class="introduction">
+                                <dd>対象：地域の</dd>
+                                <dd>イメージ：高級感と親しみやすさ</dd>
+                            </div>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="movie">
+
+            <!-- 動画のポートフォリオ追加部分 -->
+
+        </section>
+
+        <div class="viewmore">
+            <a href="./second-layer/skills.html" class="btn04 borderleft"><span>VIEW MORE SKILLS</span></a>
+        </div>
+
+        <section id="links">
+            <div class="banner">
+                <div class="banner-contents about">
+                    <a href="./second-layer/about.html"><img src="./images/banner_About.png" alt="About"></a>
+                </div>
+                <div class="banner-contents contact">
+                    <a href="./second-layer/contact.html"><img src="./images/banner_Contact.png" alt="Contact"></a>
+                </div>
+            </div>
+        </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="sns">
+            <img src="./images/icon/sns-icon_chatwork.png" alt="chatwork">
+            <img src="./images/icon/sns-icon_Slack.png" alt="Slack">
+            <img src="./images/icon/sns-icon_zoom.png" alt="ZOOM">
+            <img src="./images/icon/sns-icon_Discord.png" alt="Discord">
+        </div>
+        <p>Naoki Hirota</p>
+    </footer>
+
 </body>
+
 </html>

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/* フォント指定 */
+header {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* フォント指定ここまで */
+
+body {
+    width: 100%;
+    background-color: #f4d498;
+    position: relative;
+}
+
+main {
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    width: 100%;
+}
+
+.main-visual {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background-image: url(../images/main-visual_3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -10;
+}
+
+.name img {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    filter: drop-shadow(0 0 10px white);
+}
+
+.h2 {
+    margin: 50px auto;
+    width: 20%;
+    border-bottom: solid 5px rgb(189, 150, 91);
+    padding: 5px 5px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.viewmore {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.viewmore a {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 3vw;
+    text-align: center;
+    border: solid 1px #ccc;
+    margin: 0 auto;
+}
+
+/* 塗りに変わるボタン */
+.btn04 {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn04:hover {
+    color: #ccc;
+    border-color: transparent;
+    /*色の変化を遅らせる*/
+    transition-delay: .6s;
+}
+
+.btn04 span {
+    display: block;
+    z-index: 2;
+}
+
+/*== 線から塗に変化（左から右） */
+
+/*線の設定*/
+.borderleft span::before,
+.borderleft span::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    width: 0;
+    height: 1px;
+    /*線の形状*/
+    background: #333;
+    /*アニメーションの設定*/
+    transition: all .3s;
+}
+
+/*左上線*/
+.borderleft span::before {
+    left: 0;
+    top: 0;
+}
+
+/*左下線*/
+.borderleft span::after {
+    left: 0;
+    bottom: 0;
+}
+
+/*hoverをすると線が伸びる*/
+.borderleft:hover span::before,
+.borderleft:hover span::after {
+    width: 100%;
+}
+
+/*背景の設定*/
+.borderleft::before {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    /*背景の形状*/
+    height: 100%;
+    width: 0;
+    background: #333;
+    /*アニメーションの設定*/
+    transition: all .3s;
+}
+
+/*hoverをすると背景が伸びる*/
+.borderleft:hover::before {
+    width: 100%;
+    /*0.4秒遅れてアニメーション*/
+    transition-delay: .4s;
+}
+
+/* 塗りに変わるボタンここまで */
+
+.banner-contents {
+    position: relative;
+    top: 0;
+    transition: all .3s;
+}
+
+.banner-contents:hover {
+    top: -5px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+
+/* レスポンシブ */
+
+@media screen and (max-width: 400px){
+
+    .name img {
+        width: 80%;
+        height: auto;
+        top: 35%;
+        left: 5%;
+    }
+    
+    .about{
+        margin-bottom: 30px;
+    }
+    
+}
