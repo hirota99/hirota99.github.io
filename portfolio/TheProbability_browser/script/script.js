@@ -15,6 +15,10 @@ class Game {
         this.titleScreen = document.getElementById('titleScreen');
         this.storyScreen = document.getElementById('storyScreen');
         this.gameContainer = document.getElementById('gameContainer');
+        this.historyButton = document.getElementById('historyButton');
+        this.historyPopup = document.getElementById('historyPopup');
+        this.closePopupButton = document.getElementById('closePopupButton');
+        this.downloadButton = document.getElementById('downloadButton');
         this.storyMessageElement = document.getElementById('storyMessage');
         this.statusElement = document.getElementById('status');
         this.messageElement = document.getElementById("message"); // メッセージ表示用要素
@@ -26,11 +30,27 @@ class Game {
 
         // イベントリスナー
         document.getElementById('startButton').addEventListener('click', () => this.startStory());
+        this.historyButton.addEventListener('click', () => this.showHistoryPopup());
+        this.closePopupButton.addEventListener('click', () => this.closeHistoryPopup());
+
+        // 「ダウンロード」ボタンの動作は後で設定可能
+        this.downloadButton.addEventListener('click', () => alert('ダウンロード処理は後で実装予定です。'));
+
         document.getElementById('nextButton').addEventListener('click', () => this.showNextStory());
         document.getElementById('doorA').addEventListener('click', () => this.selectDoor('A'));
         document.getElementById('doorB').addEventListener('click', () => this.selectDoor('B'));
         this.backToTitleButton.addEventListener('click', () => this.returnToTitle());
         this.retryButton.addEventListener('click', () => this.retryGame());
+    }
+
+    // 制作ヒストリーポップアップを表示
+    showHistoryPopup() {
+        this.historyPopup.classList.remove('hidden');
+    }
+
+    // 制作ヒストリーポップアップを非表示
+    closeHistoryPopup() {
+        this.historyPopup.classList.add('hidden');
     }
 
     // タイトル画面からストーリー画面へ

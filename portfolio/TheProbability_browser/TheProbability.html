@@ -12,7 +12,29 @@
     <!-- タイトル画面 -->
     <div class="title-screen" id="titleScreen">
         <img src="./images/logo.png" alt="Game Logo" class="logo">
+        <button id="historyButton" class="history-Button">制作ヒストリー</button>
         <button id="startButton" class="start-button">スタート</button>
+    </div>
+
+    <!-- ポップアップ画面 -->
+    <div id="historyPopup" class="popup hidden">
+        <div class="popup-content">
+            <p><span class="red">※このゲームは、確率運試しゲーム『1/8192』を参考に制作したゲームです。</span></p>
+            <p><a href="https://store.steampowered.com/app/3014150/18192/?l=japanese"target="_blank" rel="noopener noreferrer" class="space">https://store.steampowered.com/app/3014150/18192/?l=japanese</a></p>
+
+            <p>Javaの学習をしていく中で、乱数の生成・ループ処理などを利用して同じようなゲームを作れるのではないかと思い制作を始めました。</p>
+            <p>ターミナル上で動作するゲームは作ることができましたが、</p>
+            <p>Webアプリとして改版しようとした際、Spring bootが思うように作動せず、</p>
+            <p></p>
+            <p>手探りでHTML・css・Java Scriptで作り直すことにしました。</p>
+            <p>なんとか…なんとか完成させることはできましたが、</p>
+            <p>ぜひターミナル版も下のリンクからダウンロードして遊んでみてください。。。</p>
+            <p class="space">【開発期間】　ターミナル版：約2ヶ月　Web版：約5ヶ月（Java Script 学習期間含む）</p>
+            <div class="popup-buttons">
+                <button id="downloadButton">ダウンロード</button>
+                <button id="closePopupButton">閉じる</button>
+            </div>
+        </div>
     </div>
 
     <!-- ホワイトアウト トランジション エフェクト用 -->
