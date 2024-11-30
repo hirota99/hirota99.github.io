@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Probability Game</title>
+</head>
+
+<body>
+    <!-- タイトル画面 -->
+    <div class="title-screen" id="titleScreen">
+        <img src="./images/logo.png" alt="Game Logo" class="logo">
+        <button id="startButton" class="start-button">スタート</button>
+    </div>
+
+    <!-- ホワイトアウト トランジション エフェクト用 -->
+    <div id="whiteout" class="whiteout-transition"></div>
+
+    <!-- ストーリー画面 -->
+    <div class="story-screen hidden" id="storyScreen">
+        <div class="story-message" id="storyMessage"></div>
+        <button id="nextButton" class="next-button">次へ</button>
+    </div>
+
+    <!-- ホワイトアウト トランジション エフェクト用 -->
+    <div id="whiteout" class="whiteout-transition"></div>
+
+    <!-- ゲーム画面 -->
+    <div class="game-container hidden" id="gameContainer">
+        <div class="status" id="status">現在の階層: 1</div>
+        <div class="doors">
+            <img src="./images/Door_White.png" id="doorA">
+            <img src="./images/Door_Brown.png" id="doorB">
+        </div>
+        <div class="message" id="gameMessage">進む扉を選んでください。</div>
+        <!-- タイトルに戻るボタンを追加 -->
+        <button id="backToTitleButton" class="back-to-title">タイトルに戻る</button>
+        <!-- "もう一度挑戦する"ボタン -->
+        <button id="retryButton" class="retry-button hidden">もう一度挑戦する</button>
+    </div>
+
+    <!-- ブラックアウト トランジション エフェクト用 -->
+    <div id="blackout" class="blackout-transition"></div>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
