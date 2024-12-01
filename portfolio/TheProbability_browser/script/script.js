@@ -45,12 +45,18 @@ class Game {
 
     // 制作ヒストリーポップアップを表示
     showHistoryPopup() {
-        this.historyPopup.classList.remove('hidden');
+        this.historyPopup.classList.remove('hidden'); // 非表示クラスを削除
+        setTimeout(() => {
+            this.historyPopup.classList.add('visible'); // トランジション効果で表示
+        }, 10); // クラス付与のタイミングをずらしてアニメーションを実行
     }
 
     // 制作ヒストリーポップアップを非表示
     closeHistoryPopup() {
-        this.historyPopup.classList.add('hidden');
+        this.historyPopup.classList.remove('visible'); // トランジション効果で非表示
+        setTimeout(() => {
+            this.historyPopup.classList.add('hidden'); // 完全に非表示に
+        }, 500); // トランジション時間に合わせて待機
     }
 
     // タイトル画面からストーリー画面へ

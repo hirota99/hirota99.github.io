@@ -89,6 +89,16 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+
+    /* アニメーション用 */
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* トランジション */
+}
+
+/* 表示中のポップアップ */
+.popup.visible {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); /* 通常サイズ */
 }
 
 /* ポップアップが非表示の場合 */
