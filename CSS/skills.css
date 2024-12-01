@@ -26,7 +26,7 @@ main {
     margin-top: 20px;
 }
 
-h2 {
+h3 {
     font-size: 3vw;
     font-weight: bold;
     padding: 20px 10px;
@@ -126,7 +126,8 @@ h2 {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 0 20px;
 }
 
 .icon {
