@@ -20,7 +20,9 @@
     <div id="historyPopup" class="popup hidden">
         <div class="popup-content">
             <p><span class="red">※このゲームは、確率運試しゲーム『1/8192』を参考に制作したゲームです。</span></p>
-            <p><a href="https://store.steampowered.com/app/3014150/18192/?l=japanese"target="_blank" rel="noopener noreferrer" class="space">https://store.steampowered.com/app/3014150/18192/?l=japanese</a></p>
+            <p><a href="https://store.steampowered.com/app/3014150/18192/?l=japanese" target="_blank"
+                    rel="noopener noreferrer"
+                    class="space">https://store.steampowered.com/app/3014150/18192/?l=japanese</a></p>
 
             <p>Javaの学習をしていく中で、乱数の生成・ループ処理などを利用して同じようなゲームを作れるのではないかと思い制作を始めました。</p>
             <p>ターミナル上で動作するゲームは作ることができましたが、</p>
@@ -51,7 +53,9 @@
 
     <!-- ゲーム画面 -->
     <div class="game-container hidden" id="gameContainer">
-        <div class="status" id="status">現在の階層: 1</div>
+        <div id="statusContainer">
+            <p id="status">現在の階層: 1</p>
+        </div>
         <div class="doors">
             <img src="./images/Door_White.png" id="doorA">
             <img src="./images/Door_Brown.png" id="doorB">

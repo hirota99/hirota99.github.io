@@ -56,7 +56,7 @@ class Game {
         this.historyPopup.classList.remove('visible'); // トランジション効果で非表示
         setTimeout(() => {
             this.historyPopup.classList.add('hidden'); // 完全に非表示に
-        }, 500); // トランジション時間に合わせて待機
+        }, 2000); // トランジション時間に合わせて待機
     }
 
     // タイトル画面からストーリー画面へ
@@ -137,7 +137,7 @@ class Game {
 
     // ステータス更新
     updateStatus() {
-        this.statusElement.textContent = `現在の階層: ${this.currentFloor}`;
+        this.statusElement.textContent = `現在の階層: ${this.currentFloor}  / 1,048,576`;
     }
 
     // 扉選択処理
@@ -184,6 +184,7 @@ class Game {
                     } else {
                         // 「残念！ゲームオーバー」を表示
                         messageContainer.textContent = "残念！ゲームオーバー";
+                        this.disableDoors(); // 扉を無効化
                         setTimeout(() => {
                             // メッセージを消し、リトライボタンを表示
                             messageContainer.textContent = "";
@@ -199,6 +200,18 @@ class Game {
         showDots();
     }
 
+    // 扉を無効化する関数
+    disableDoors() {
+        document.getElementById('doorA').classList.add('disabled');
+        document.getElementById('doorB').classList.add('disabled');
+    }
+
+    // 扉を有効化する関数
+    enableDoors() {
+        document.getElementById('doorA').classList.remove('disabled');
+        document.getElementById('doorB').classList.remove('disabled');
+    }
+
     // リトライボタンを表示
     showRetryButton(container) {
         this.retryButton.classList.remove('hidden');
@@ -211,6 +224,7 @@ class Game {
     // リトライボタンを押したときの処理
     retryGame() {
         this.retryButton.style.display = 'none'; // ボタンを非表示に
+        this.enableDoors(); // 扉を再び有効化
         this.triggerWhiteout(() => {
             this.gameContainer.style.display = 'none'; // ゲーム画面を非表示
             this.storyScreen.style.display = 'flex'; // ストーリー画面を再表示

@@ -92,7 +92,7 @@ body {
 
     /* アニメーション用 */
     opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease; /* トランジション */
+    transition: opacity 2s ease, transform 2s ease; /* トランジション */
 }
 
 /* 表示中のポップアップ */
@@ -215,7 +215,7 @@ body {
 
 .next-button {
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 1.3em;
     color: #fff;
     background-color: #007bff;
     border: none;
@@ -259,15 +259,30 @@ body {
     display: none;
 }
 
-.status {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    color: #333;
+/* 「現在の階層:」のコンテナ */
+#statusContainer {
+    position: fixed; /* 画面上部に固定 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 横幅いっぱい */
+    background-color: rgba(0, 0, 0, 0.6); /* 半透明の黒 */
+    color: white; /* 白文字 */
+    text-align: center; /* テキストを中央揃え */
+    padding: 10px 0; /* 縦方向の余白 */
+    z-index: 10; /* 他の要素の上に表示 */
+    font-size: 2rem; /* 適宜フォントサイズ調整 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 下部に影を追加（任意） */
+}
+
+/* 「現在の階層:」の文字 */
+#status {
+    margin: 0; /* 余白をなくす */
+
 }
 
 .doors img {
-    width: 150px;
-    margin: 0 20px;
+    width: 180px;
+    margin: 0 50px;
     cursor: pointer;
 }
 
@@ -301,7 +316,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .back-to-title:hover {
@@ -312,7 +327,7 @@ body {
 .retry-button {
     padding: 10px 20px;
     /* ボタンの内側の余白 */
-    font-size: 1rem;
+    font-size: 1.3rem;
     /* 文字サイズ */
     color: #fff;
     /* 文字色 */
@@ -339,6 +354,11 @@ body {
 
 .hidden {
     display: none;
+}
+
+.doors img.disabled {
+    pointer-events: none; /* クリックを無効化 */
+    cursor: not-allowed; /* マウスカーソルを変更 */
 }
 
 /* ブラックアウト */
