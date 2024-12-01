@@ -46,9 +46,15 @@ h2 {
     justify-content: space-around;
 }
 
+.tool-content{
+    width: 40%;
+}
+
 .tool-content dl{
     display: flex;
     flex-wrap: wrap;
+    min-width: 350px;
+
 }
 
 .tool-content dl a{
@@ -79,12 +85,13 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 30px auto;
+    margin: 80px auto;
 }
 
 .skills li {
     width: 40%;
     box-sizing: border-box;
+    min-width: 350px;
 
 }
 
