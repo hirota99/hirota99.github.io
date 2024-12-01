@@ -147,6 +147,21 @@ body {
     background: #0056b3;
 }
 
+#downloadButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* ボタン背景色 */
+    color: #fff; /* テキスト色 */
+    text-align: center;
+    text-decoration: none; /* リンクの下線を消す */
+    border-radius: 5px; /* 角丸 */
+    cursor: pointer;
+}
+
+#downloadButton:hover {
+    background-color: #0056b3; /* ホバー時の色 */
+}
+
 /* トランジション用ホワイトアウト */
 .whiteout-transition {
     position: fixed;
