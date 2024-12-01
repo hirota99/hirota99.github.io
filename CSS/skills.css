@@ -33,44 +33,44 @@ h2 {
 }
 
 /* 使用ツール */
-.tools{
+.tools {
     width: 100%;
     margin-top: 30px;
     margin-bottom: 100px;
 }
 
-.tool-list{
+.tool-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 20px;
     justify-content: space-around;
 }
 
-.tool-content{
+.tool-content {
     width: 40%;
 }
 
-.tool-content dl{
+.tool-content dl {
     display: flex;
     flex-wrap: wrap;
     min-width: 350px;
 
 }
 
-.tool-content dl a{
+.tool-content dl a {
     display: flex;
     flex-wrap: wrap;
 }
 
-.tool-content img{
+.tool-content img {
     width: 60px;
 }
 
-.tool-content-exp{
+.tool-content-exp {
     margin-left: 20px;
 }
 
-.tool-content-name{
+.tool-content-name {
     font-weight: bold;
     border-bottom: solid 2px black;
     margin-bottom: 5px;
@@ -101,13 +101,16 @@ h2 {
     overflow: hidden;
     filter: drop-shadow(2px 2px 3px black);
 }
-.zoom-box img{
+
+.zoom-box img {
     display: block;
     transition-duration: .5s;
 }
+
 .skills li img:hover {
     transform: scale(1.2);
 }
+
 /* ホバーで拡大ここまで */
 
 .skills li img {
@@ -119,14 +122,14 @@ h2 {
     text-align: center;
 }
 
-.pages{
+.pages {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.icon{
+.icon {
     background-color: #cd853f;
     color: white;
     font-size: small;
@@ -146,12 +149,12 @@ h2 {
     margin-top: 5px;
 }
 
-#links{
+#links {
     width: 100%;
     margin: 100px auto;
 }
 
-.banner{
+.banner {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -159,22 +162,22 @@ h2 {
     justify-content: space-around;
 }
 
-.banner-contents{
+.banner-contents {
     width: 300px;
     height: auto;
 }
 
-.banner-contents img{
+.banner-contents img {
     width: 100%;
 }
 
-.banner-contents{
-    position:relative;
-    top:0;
+.banner-contents {
+    position: relative;
+    top: 0;
     transition: all .3s;
 }
 
 .banner-contents:hover {
-    top:-5px;
+    top: -5px;
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
 }
