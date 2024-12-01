@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
-    font-family: Arial, sans-serif;
+
     background-color: #f3f3f3;
     height: 100vh;
     display: flex;
@@ -92,13 +95,15 @@ body {
 
     /* アニメーション用 */
     opacity: 0;
-    transition: opacity 2s ease, transform 2s ease; /* トランジション */
+    transition: opacity 2s ease, transform 2s ease;
+    /* トランジション */
 }
 
 /* 表示中のポップアップ */
 .popup.visible {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1); /* 通常サイズ */
+    transform: translate(-50%, -50%) scale(1);
+    /* 通常サイズ */
 }
 
 /* ポップアップが非表示の場合 */
@@ -115,12 +120,12 @@ body {
     line-height: 1.5;
 }
 
-.red{
+.red {
     font-weight: bold;
     color: #ff4444;
 }
 
-.space{
+.space {
     line-height: 5;
 }
 
@@ -150,16 +155,21 @@ body {
 #downloadButton {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* ボタン背景色 */
-    color: #fff; /* テキスト色 */
+    background-color: #007bff;
+    /* ボタン背景色 */
+    color: #fff;
+    /* テキスト色 */
     text-align: center;
-    text-decoration: none; /* リンクの下線を消す */
-    border-radius: 5px; /* 角丸 */
+    text-decoration: none;
+    /* リンクの下線を消す */
+    border-radius: 5px;
+    /* 角丸 */
     cursor: pointer;
 }
 
 #downloadButton:hover {
-    background-color: #0056b3; /* ホバー時の色 */
+    background-color: #0056b3;
+    /* ホバー時の色 */
 }
 
 /* トランジション用ホワイトアウト */
@@ -276,22 +286,32 @@ body {
 
 /* 「現在の階層:」のコンテナ */
 #statusContainer {
-    position: fixed; /* 画面上部に固定 */
+    position: fixed;
+    /* 画面上部に固定 */
     top: 0;
     left: 0;
-    width: 100%; /* 横幅いっぱい */
-    background-color: rgba(0, 0, 0, 0.6); /* 半透明の黒 */
-    color: white; /* 白文字 */
-    text-align: center; /* テキストを中央揃え */
-    padding: 10px 0; /* 縦方向の余白 */
-    z-index: 10; /* 他の要素の上に表示 */
-    font-size: 2rem; /* 適宜フォントサイズ調整 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 下部に影を追加（任意） */
+    width: 100%;
+    /* 横幅いっぱい */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* 半透明の黒 */
+    color: white;
+    /* 白文字 */
+    text-align: center;
+    /* テキストを中央揃え */
+    padding: 10px 0;
+    /* 縦方向の余白 */
+    z-index: 10;
+    /* 他の要素の上に表示 */
+    font-size: 2rem;
+    /* 適宜フォントサイズ調整 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* 下部に影を追加（任意） */
 }
 
 /* 「現在の階層:」の文字 */
 #status {
-    margin: 0; /* 余白をなくす */
+    margin: 0;
+    /* 余白をなくす */
 
 }
 
@@ -319,6 +339,8 @@ body {
     /* 縦方向の中央揃え */
     font-size: 1.7em;
 }
+
+
 
 /* タイトルに戻るボタン */
 .back-to-title {
@@ -372,8 +394,10 @@ body {
 }
 
 .doors img.disabled {
-    pointer-events: none; /* クリックを無効化 */
-    cursor: not-allowed; /* マウスカーソルを変更 */
+    pointer-events: none;
+    /* クリックを無効化 */
+    cursor: not-allowed;
+    /* マウスカーソルを変更 */
 }
 
 /* ブラックアウト */
