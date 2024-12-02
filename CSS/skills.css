@@ -14,7 +14,7 @@ main {
 .top-visual {
     width: 100%;
     height: 60vh;
-    background-image: url(../images/skills/AdobeStock_402352374.jpeg);
+    background-image: url(../images/skills/skills_top_pc.jpeg);
     background-position: center;
     background-size: cover;
     filter: brightness(0.8);
@@ -27,7 +27,7 @@ main {
 }
 
 h3 {
-    font-size: 3vw;
+    font-size: max(3vw,30px);
     font-weight: bold;
     padding: 20px 10px;
 }
@@ -158,4 +158,13 @@ h3 {
 
 .skills dd {
     margin-top: 5px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 480px){
+
+    .top-visual{
+        background-image: url(../images/skills/skills_top_sp.jpg);
+    }
+
 }

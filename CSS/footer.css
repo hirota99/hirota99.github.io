@@ -68,6 +68,6 @@ footer p{
     padding: 30px;
     color: white;
     text-align: center;
-    font-size: 3vw;
+    font-size: max(3vw,30px);
     letter-spacing: 1px;
 }

@@ -32,13 +32,13 @@ body{
 }
 
 .name h1{
-    font-size: 3.5vw;
+    font-size: max(3.5vw,18px);
     font-weight: bold;
     padding-top: 10px;
 }
 
 .name h2{
-    font-size: 1.5vw;
+    font-size: max(1.5vw,14px);
 }
 
 .genre{
@@ -46,6 +46,10 @@ body{
     padding-left: 50px;
     align-content: space-around;
     color: rgb(104, 104, 104);
+}
+
+.genre p{
+    font-size: max(1.5vw,10px);
 }
 
 .profile-main {
@@ -76,4 +80,15 @@ body{
     margin-top: 50px;
     height: auto; /* 画像のアスペクト比を保つ */
     display: block; /* 画像の下に余計な空白を出さない */
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width: 400px){
+
+    .about-top-visual{
+        background-position:center,top;
+        overflow: hidden;
+    }
+
 }

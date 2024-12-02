@@ -63,7 +63,7 @@ h2 {
 .viewmore a {
     display: inline-block;
     padding: 10px 30px;
-    font-size: 3vw;
+    font-size: max(3vw,25px);
     text-align: center;
     border: solid 1px #ccc;
     margin: 0 auto;
