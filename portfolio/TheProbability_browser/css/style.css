@@ -40,6 +40,7 @@ body {
 
 .logo {
     max-width: 80%;
+    min-width: 400px;
     position: absolute;
     top: 20px;
     filter: drop-shadow(2px 4px 10px rgb(255, 255, 255));
@@ -433,4 +434,26 @@ body {
     /* アクティブ状態で画面を黒くする */
     pointer-events: all;
     /* 一時的に操作を無効化 */
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 567px){
+
+    #statusContainer{
+        font-size: 5vw;
+    }
+
+    .doors img{
+        width: 30vw;
+        margin: 0 20px;
+    }
+
+    .back-to-title{
+        right: initial;
+        bottom: 120px;
+    }
+
+    .retry-button{
+    margin-top: 0;
+    }
 }
