@@ -96,19 +96,29 @@ h3 {
 }
 
 /* ホバーで拡大 */
+/* デフォルトではドロップシャドウなし */
 .zoom-box {
     display: inline-block;
     overflow: hidden;
-    filter: drop-shadow(2px 2px 3px black);
+    position: relative; /* Safariでの再描画を安定させる */
+    transition: filter 0.3s ease; /* スムーズな切り替え */
 }
 
+/* hover時にドロップシャドウを追加 */
+.zoom-box:hover {
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+/* 画像拡大効果 */
 .zoom-box img {
     display: block;
-    transition-duration: .5s;
+    transition: transform 0.5s ease;
+    backface-visibility: hidden; /* Safariでの再描画の安定化 */
+    will-change: transform; /* パフォーマンス向上 */
 }
 
-.zoom-box img:hover {
-    transform: scale(1.2);
+.zoom-box:hover img {
+    transform: scale(1.2); /* 拡大 */
 }
 
 /* ホバーで拡大ここまで */
