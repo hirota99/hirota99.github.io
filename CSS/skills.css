@@ -107,7 +107,7 @@ h3 {
     transition-duration: .5s;
 }
 
-.skills li img:hover {
+.zoom-box img:hover {
     transform: scale(1.2);
 }
 
