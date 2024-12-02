@@ -7,8 +7,11 @@
     font-style: normal;
 }
 
-body {
+html, body {
+    height: 100%;
+}
 
+body {
     background-color: #f3f3f3;
     height: 100vh;
     display: flex;
@@ -27,6 +30,7 @@ body {
     background-image: url(../images/title.jpeg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .title-screen.hidden {
@@ -36,14 +40,17 @@ body {
 
 .logo {
     max-width: 80%;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 20px;
     filter: drop-shadow(2px 4px 10px rgb(255, 255, 255));
 }
 
 .start-button {
+    position: absolute;
+    bottom: 20px;
     margin-bottom: 50px;
     padding: 15px 30px;
-    font-size: 1.5em;
+    font-size: calc(1rem + 0.5vw); /* フォントサイズの相対化 */
     color: #fff;
     background-color: #007bff;
     border: none;
@@ -57,9 +64,11 @@ body {
 }
 
 .history-Button {
+    position: absolute;
+    bottom: 120px;
     margin-bottom: 50px;
     padding: 15px 30px;
-    font-size: 1.5em;
+    font-size: calc(1rem + 0.5vw); /* フォントサイズの相対化 */
     color: #fff;
     background-color: #e31111;
     border: none;
@@ -162,7 +171,7 @@ body {
     text-align: center;
     text-decoration: none;
     /* リンクの下線を消す */
-    border-radius: 5px;
+    border-radius: 10px;
     /* 角丸 */
     cursor: pointer;
 }
