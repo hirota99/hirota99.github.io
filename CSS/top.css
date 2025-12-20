@@ -28,7 +28,7 @@ main {
     background-repeat: no-repeat;
     object-fit: contain;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     position: relative;
     z-index: -10;
 }
@@ -150,6 +150,10 @@ h2 {
 /* レスポンシブ */
 
 @media screen and (max-width: 400px){
+
+    .main-visual{
+        min-height: 70vh;
+    }
 
     .name img {
         width: 80%;
