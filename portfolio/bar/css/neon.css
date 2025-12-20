@@ -275,4 +275,18 @@ button:hover .blink a {
         width: 70%;
     }
 
+    /* スマホではボタンを常時ホバー状態（バチバチ光った状態）に */
+    .neon-btn .blink {
+        animation: blink 2.5s step-start 0s infinite;
+        -webkit-animation: blink 2.5s step-start 0s infinite;
+        border-color: #00edff;
+        -webkit-box-shadow: 0 0 10px 0 #00edff;
+        box-shadow: 0 0 10px 0 #00edff;
+    }
+
+    .neon-btn .blink a {
+        filter: drop-shadow(0 0 10px #00edff);
+        filter: drop-shadow(0 0 13px #00edff) drop-shadow(0 0 15px #00edff);
+    }
+
 }
