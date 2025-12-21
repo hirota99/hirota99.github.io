@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/reset.css">
+    <link rel="stylesheet" href="../../CSS/header.css">
+    <link rel="stylesheet" href="./CSS/programsPortforio.css">
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <!-- フォント指定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- フォント指定ここまで -->
+    <title>MergePDF PDF結合ツール</title>
+</head>
+
+<body>
+    <header class="c-header c-hamburger-menu">
+        <a href="../../index.html" class="c-header__logo"><img src="../../images/rogo.png" alt="ロゴ"></a>
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input" />
+        <label for="hamburger" class="c-hamburger-menu__bg"></label>
+        <ul class="c-header__list c-hamburger-menu__list">
+            <li class="c-header__list-item">
+                <a href="../../second-layer/skills.html" class="c-header__list-link"><span>Skill</span></a>
+            </li>
+            <li class="c-header__list-item">
+                <a href="../../second-layer/about.html" class="c-header__list-link"><span>About</span></a>
+            </li>
+            <li class="c-header__list-item">
+                <a href="../../second-layer/contact.html" class="c-header__list-link"><span>Contact</span></a>
+            </li>
+        </ul>
+        <label for="hamburger" class="c-hamburger-menu__button">
+            <span class="c-hamburger-menu__button-mark"></span>
+            <span class="c-hamburger-menu__button-mark"></span>
+            <span class="c-hamburger-menu__button-mark"></span>
+        </label>
+    </header>
+
+    <div class="space"></div>
+
+    <section class="portforio">
+        <div class="title">
+            <h1>MergePDF - PDF結合ツール -</h1>
+        </div>
+
+        <div class="content">
+            <div class="program-image">
+                <img src="./images/MergePDF_icon.png" alt="MergePDFのアプリアイコン" class="app_icon">
+                <img src="./images/MergePDF_screen_1.png" alt="MergePDFのスクリーンショット">
+                
+                
+            </div>
+        
+        <!-- 開発環境セクション -->
+            <section class="spec-section">
+                <h2>開発環境</h2>
+                <div class="info-card">
+                    <ul class="environment-list">
+                        <li><strong>開発端末：</strong><span>Pro(Apple Silicon M1チップ)</span></li>
+                        <li><strong>エディター：</strong><span>VScode</span></li>
+                        <li><strong>バージョン：</strong><span>.NET9</span></li>
+                        <li><strong>フレームワーク：</strong><span>.NET MAUI</span></li>
+                        <li><strong>使用言語：</strong><span>C#</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- アプリ概要セクション -->
+            <section class="spec-section">
+                <h2>アプリ概要</h2>
+                <div class="info-card">
+                    <ul class="overview-list">
+                        <li>PDFの結合をすることができるアプリ</li>
+                        <li>「Input」フォルダ内に配置したPDFファイルをファイル名昇順で結合</li>
+                        <li>結合後のPDFは「Output」フォルダに出力される</li>
+                        <li>「Input」「Output」フォルダはアプリ実行ファイルの同ディレクトリに無ければ自動作成される</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 使用パッケージセクション -->
+            <section class="spec-section">
+                <h2>使用パッケージ</h2>
+                <div class="info-card">
+                    <div class="package-badge">
+                        <span>iText sharp</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 機能詳細セクション -->
+            <section class="spec-section">
+                <h2>機能詳細</h2>
+                
+                <div class="feature-card">
+                    <h3>メインページ</h3>
+                    <ul class="feature-list">
+                        <li>アプリ起動時、カレントディレクトリを取得して「Input」「Output」フォルダパスを生成、テキストボックスに表示</li>
+                        <li>「実行」ボタンでPDF結合開始</li>
+                        <li>結合後のファイル名は『Merged_yyyyMMdd_HHmmss.pdf』</li>
+                        <li>結合ステータスを実行ボタン下に表示</li>
+                    </ul>
+                </div>
+            </section>
+        
+        </div>
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>
