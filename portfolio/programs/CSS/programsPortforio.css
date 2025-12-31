@@ -158,7 +158,63 @@ h2{
     font-size: 1.05em;
 }
 
-/* レスポンシブデザイン */
+/* ダウンロードセクション */
+.download-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.download-section h2 {
+    font-size: 1.8em;
+    color: #667eea;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+    display: inline-block;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.download-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.05em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    width: 240px;
+    text-align: center;
+    justify-content: center;
+}
+
+.download-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+.download-btn:active {
+    transform: translateY(-2px);
+}
+
+.download-icon {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+}
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -194,5 +250,25 @@ h2{
     .environment-list li strong {
         display: block;
         margin-bottom: 5px;
+    }
+
+    .download-buttons {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .download-btn {
+        padding: 15px 20px;
+        width: 200px;
+        font-size: 0.95em;
+    }
+
+    .download-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .download-section h2 {
+        font-size: 1.5em;
     }
 }
