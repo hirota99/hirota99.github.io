@@ -55,6 +55,91 @@ h2 {
     font-weight: bold;
 }
 
+/* Skillsセクション */
+.skills {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px auto;
+    gap: 30px 0;
+}
+
+.skills li {
+    width: 40%;
+    box-sizing: border-box;
+    min-width: 350px;
+
+}
+
+/* ホバーで拡大 */
+/* デフォルトではドロップシャドウなし */
+.zoom-box {
+    display: inline-block;
+    overflow: hidden;
+    position: relative; /* Safariでの再描画を安定させる */
+    transition: filter 0.3s ease; /* スムーズな切り替え */
+}
+
+/* hover時にドロップシャドウを追加 */
+.zoom-box:hover {
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+/* 画像拡大効果 */
+.zoom-box img {
+    display: block;
+    transition: transform 0.5s ease;
+    backface-visibility: hidden; /* Safariでの再描画の安定化 */
+    will-change: transform; /* パフォーマンス向上 */
+}
+
+.zoom-box:hover img {
+    transform: scale(1.2); /* 拡大 */
+}
+
+/* ホバーで拡大ここまで */
+
+.skills li img {
+    width: 100%;
+}
+
+.skills li dl {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pages {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+.icon {
+    background-color: #cd853f;
+    color: white;
+    font-size: small;
+    font-weight: lighter;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.introduction {
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.skills dd {
+    margin-top: 5px;
+}
+
+
+/* Skillsセクション　ここまで */
+
 .viewmore {
     margin-top: 50px;
     text-align: center;
@@ -160,6 +245,14 @@ h2 {
         height: auto;
         top: 35%;
         left: 5%;
+    }
+
+    .h2{
+        width: 50%;
+    }
+
+    .skills{
+        justify-content: center;
     }
     
     .about{

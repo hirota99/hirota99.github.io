@@ -216,9 +216,6 @@ h2{
     filter: brightness(0) invert(1);
 }
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
 
     main {
         padding: 20px;
